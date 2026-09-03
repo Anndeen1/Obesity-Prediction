@@ -1,0 +1,96 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 40 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -A -c -1
+Relation:     ObesityDataSet_raw_and_data_sinthetic-weka.filters.unsupervised.instance.RemoveDuplicates-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R3-4-weka.filters.unsupervised.attribute.Discretize-F-B3-M-1.0-R2,5,6,9,11,12-precision6
+Instances:    2087
+Attributes:   15
+              Gender
+              Age
+              family_history_with_overweight
+              FAVC
+              FCVC
+              NCP
+              CAEC
+              SMOKE
+              CH2O
+              SCC
+              FAF
+              TUE
+              CALC
+              MTRANS
+              NObeyesdad
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.15 (313 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 17
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 15
+
+Size of set of large itemsets L(2): 55
+
+Size of set of large itemsets L(3): 130
+
+Size of set of large itemsets L(4): 215
+
+Size of set of large itemsets L(5): 253
+
+Size of set of large itemsets L(6): 210
+
+Size of set of large itemsets L(7): 120
+
+Size of set of large itemsets L(8): 45
+
+Size of set of large itemsets L(9): 10
+
+Size of set of large itemsets L(10): 1
+
+Best rules found:
+
+ 1. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes CALC=Sometimes MTRANS=Public_Transportation 324 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.99)
+ 2. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SCC=no CALC=Sometimes MTRANS=Public_Transportation 324 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.99)
+ 3. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SCC=no CALC=Sometimes MTRANS=Public_Transportation 324 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.99)
+ 4. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no CALC=Sometimes MTRANS=Public_Transportation 323 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.99)
+ 5. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no CALC=Sometimes MTRANS=Public_Transportation 323 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.99)
+ 6. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no SCC=no CALC=Sometimes MTRANS=Public_Transportation 323 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.99)
+ 7. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no SCC=no CALC=Sometimes MTRANS=Public_Transportation 323 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.99)
+ 8. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes CALC=Sometimes MTRANS=Public_Transportation 325 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.99)
+ 9. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' SMOKE=no CALC=Sometimes MTRANS=Public_Transportation 324 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.99)
+10. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' SMOKE=no SCC=no CALC=Sometimes MTRANS=Public_Transportation 324 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.99)
+11. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' SMOKE=no SCC=no CALC=Sometimes MTRANS=Public_Transportation 324 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.99)
+12. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CALC=Sometimes MTRANS=Public_Transportation 326 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.99)
+13. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' SCC=no CALC=Sometimes MTRANS=Public_Transportation 326 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.99)
+14. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' SCC=no CALC=Sometimes MTRANS=Public_Transportation 326 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.99)
+15. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes MTRANS=Public_Transportation 327 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.98)
+16. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SCC=no MTRANS=Public_Transportation 327 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.98)
+17. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' SMOKE=no CALC=Sometimes MTRANS=Public_Transportation 326 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+18. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no MTRANS=Public_Transportation 326 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+19. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no SCC=no MTRANS=Public_Transportation 326 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+20. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SCC=no MTRANS=Public_Transportation 328 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.98)
+21. Gender=Female FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SCC=no CALC=Sometimes MTRANS=Public_Transportation 328 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.98)
+22. Gender=Female FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SCC=no CALC=Sometimes MTRANS=Public_Transportation 328 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.98)
+23. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no SCC=no MTRANS=Public_Transportation 327 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+24. Gender=Female FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no SCC=no CALC=Sometimes MTRANS=Public_Transportation 327 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+25. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' CAEC=Sometimes SMOKE=no SCC=no CALC=Sometimes MTRANS=Public_Transportation 327 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+26. Gender=Female FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no SCC=no CALC=Sometimes MTRANS=Public_Transportation 327 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+27. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CALC=Sometimes MTRANS=Public_Transportation 329 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.98)
+28. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes CALC=Sometimes 329 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.98)
+29. Gender=Female FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes CALC=Sometimes MTRANS=Public_Transportation 329 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.98)
+30. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SCC=no CALC=Sometimes 329 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.98)
+31. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' CAEC=Sometimes SCC=no CALC=Sometimes MTRANS=Public_Transportation 329 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.98)
+32. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no MTRANS=Public_Transportation 328 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+33. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no CALC=Sometimes 328 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+34. Gender=Female FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no CALC=Sometimes MTRANS=Public_Transportation 328 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+35. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no SCC=no CALC=Sometimes 328 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+36. Gender=Female FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes SMOKE=no CALC=Sometimes MTRANS=Public_Transportation 329 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+37. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' SMOKE=no SCC=no CALC=Sometimes MTRANS=Public_Transportation 329 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.98)
+38. Gender=Female family_history_with_overweight=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes MTRANS=Public_Transportation 331 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.97)
+39. Gender=Female FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' CAEC=Sometimes CALC=Sometimes MTRANS=Public_Transportation 331 ==> NObeyesdad=Obesity_Type_III 322    conf:(0.97)
+40. Gender=Female family_history_with_overweight=yes FAVC=yes FCVC='(2.995893-inf)' NCP='(2.999673-3.000487]' SMOKE=no CALC=Sometimes 330 ==> NObeyesdad=Obesity_Type_III 321    conf:(0.97)
+
