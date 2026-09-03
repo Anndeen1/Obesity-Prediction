@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     ObesityDataSet_raw_and_data_sinthetic-weka.filters.unsupervised.instance.RemoveDuplicates-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R3-4-weka.filters.unsupervised.instance.RemovePercentage-P20.0
+Instances:    1670
+Attributes:   15
+              Gender
+              Age
+              family_history_with_overweight
+              FAVC
+              FCVC
+              NCP
+              CAEC
+              SMOKE
+              CH2O
+              SCC
+              FAF
+              TUE
+              CALC
+              MTRANS
+              NObeyesdad
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.28 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         368               88.2494 %
+Incorrectly Classified Instances        49               11.7506 %
+Kappa statistic                          0.8625
+Mean absolute error                      0.0834
+Root mean squared error                  0.1745
+Relative absolute error                 34.0771 %
+Root relative squared error             49.8814 %
+Total Number of Instances              417     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.714    0.042    0.727      0.714    0.721      0.678    0.961     0.805     Normal_Weight
+                 0.830    0.016    0.880      0.830    0.854      0.834    0.963     0.891     Overweight_Level_I
+                 0.770    0.017    0.887      0.770    0.825      0.800    0.985     0.940     Overweight_Level_II
+                 0.934    0.031    0.838      0.934    0.884      0.864    0.989     0.952     Obesity_Type_I
+                 0.944    0.006    0.962      0.944    0.953      0.946    0.998     0.990     Insufficient_Weight
+                 0.946    0.019    0.883      0.946    0.914      0.901    0.994     0.978     Obesity_Type_II
+                 1.000    0.006    0.974      1.000    0.987      0.984    1.000     1.000     Obesity_Type_III
+Weighted Avg.    0.882    0.019    0.883      0.882    0.881      0.863    0.985     0.940     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 40  3  4  5  2  2  0 |  a = Normal_Weight
+  5 44  1  2  0  1  0 |  b = Overweight_Level_I
+  5  1 47  4  0  4  0 |  c = Overweight_Level_II
+  2  1  0 57  0  0  1 |  d = Obesity_Type_I
+  2  1  0  0 51  0  0 |  e = Insufficient_Weight
+  1  0  1  0  0 53  1 |  f = Obesity_Type_II
+  0  0  0  0  0  0 76 |  g = Obesity_Type_III
+

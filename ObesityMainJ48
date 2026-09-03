@@ -1,0 +1,465 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     ObesityDataSet_raw_and_data_sinthetic-weka.filters.unsupervised.instance.RemoveDuplicates-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.Remove-R3-4-weka.filters.unsupervised.instance.RemovePercentage-P20.0
+Instances:    1670
+Attributes:   15
+              Gender
+              Age
+              family_history_with_overweight
+              FAVC
+              FCVC
+              NCP
+              CAEC
+              SMOKE
+              CH2O
+              SCC
+              FAF
+              TUE
+              CALC
+              MTRANS
+              NObeyesdad
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+FCVC <= 2.997951
+|   family_history_with_overweight = yes
+|   |   NCP <= 3.014808
+|   |   |   CAEC = Sometimes
+|   |   |   |   Gender = Female
+|   |   |   |   |   FAVC = no
+|   |   |   |   |   |   SCC = no
+|   |   |   |   |   |   |   FAF <= 2.669179: Overweight_Level_II (24.0/2.0)
+|   |   |   |   |   |   |   FAF > 2.669179: Normal_Weight (2.0)
+|   |   |   |   |   |   SCC = yes: Normal_Weight (2.0)
+|   |   |   |   |   FAVC = yes
+|   |   |   |   |   |   CALC = no
+|   |   |   |   |   |   |   Age <= 22.889099
+|   |   |   |   |   |   |   |   CH2O <= 1.000695: Normal_Weight (4.0/1.0)
+|   |   |   |   |   |   |   |   CH2O > 1.000695
+|   |   |   |   |   |   |   |   |   Age <= 19.010211
+|   |   |   |   |   |   |   |   |   |   NCP <= 2.870661: Overweight_Level_I (16.0)
+|   |   |   |   |   |   |   |   |   |   NCP > 2.870661: Obesity_Type_I (13.0)
+|   |   |   |   |   |   |   |   |   Age > 19.010211: Obesity_Type_I (18.0)
+|   |   |   |   |   |   |   Age > 22.889099
+|   |   |   |   |   |   |   |   TUE <= 0.658783
+|   |   |   |   |   |   |   |   |   NCP <= 2.993856: Obesity_Type_I (26.0/1.0)
+|   |   |   |   |   |   |   |   |   NCP > 2.993856
+|   |   |   |   |   |   |   |   |   |   FAF <= 1
+|   |   |   |   |   |   |   |   |   |   |   Age <= 39.656559: Overweight_Level_II (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Age > 39.656559: Obesity_Type_I (2.0)
+|   |   |   |   |   |   |   |   |   |   FAF > 1: Normal_Weight (2.0/1.0)
+|   |   |   |   |   |   |   |   TUE > 0.658783
+|   |   |   |   |   |   |   |   |   CH2O <= 2.70914: Overweight_Level_II (17.0/1.0)
+|   |   |   |   |   |   |   |   |   CH2O > 2.70914: Obesity_Type_I (3.0)
+|   |   |   |   |   |   CALC = Sometimes
+|   |   |   |   |   |   |   TUE <= 0.991473
+|   |   |   |   |   |   |   |   CH2O <= 2.984323
+|   |   |   |   |   |   |   |   |   Age <= 36.769646
+|   |   |   |   |   |   |   |   |   |   Age <= 20.345161: Obesity_Type_I (4.0)
+|   |   |   |   |   |   |   |   |   |   Age > 20.345161
+|   |   |   |   |   |   |   |   |   |   |   FAF <= 0.362441
+|   |   |   |   |   |   |   |   |   |   |   |   Age <= 27.991467: Obesity_Type_I (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Age > 27.991467: Overweight_Level_I (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   FAF > 0.362441: Overweight_Level_I (21.0)
+|   |   |   |   |   |   |   |   |   Age > 36.769646
+|   |   |   |   |   |   |   |   |   |   TUE <= 0.111925: Obesity_Type_I (31.0)
+|   |   |   |   |   |   |   |   |   |   TUE > 0.111925: Overweight_Level_I (6.0)
+|   |   |   |   |   |   |   |   CH2O > 2.984323: Overweight_Level_II (4.0/1.0)
+|   |   |   |   |   |   |   TUE > 0.991473
+|   |   |   |   |   |   |   |   FAF <= 0.958555
+|   |   |   |   |   |   |   |   |   Age <= 23.237302
+|   |   |   |   |   |   |   |   |   |   FCVC <= 2.206399: Obesity_Type_I (10.0)
+|   |   |   |   |   |   |   |   |   |   FCVC > 2.206399: Overweight_Level_I (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Age > 23.237302
+|   |   |   |   |   |   |   |   |   |   FAF <= 0.249264: Normal_Weight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   FAF > 0.249264: Overweight_Level_II (2.0)
+|   |   |   |   |   |   |   |   FAF > 0.958555: Normal_Weight (5.0/1.0)
+|   |   |   |   |   |   CALC = Frequently
+|   |   |   |   |   |   |   Age <= 23.586058: Overweight_Level_I (7.0)
+|   |   |   |   |   |   |   Age > 23.586058: Overweight_Level_II (4.0)
+|   |   |   |   |   |   CALC = Always: Obesity_Type_I (0.0)
+|   |   |   |   Gender = Male
+|   |   |   |   |   Age <= 23.807181
+|   |   |   |   |   |   Age <= 18.038422
+|   |   |   |   |   |   |   NCP <= 2.449723: Obesity_Type_I (10.0)
+|   |   |   |   |   |   |   NCP > 2.449723
+|   |   |   |   |   |   |   |   TUE <= 0.978574
+|   |   |   |   |   |   |   |   |   CALC = no: Obesity_Type_I (9.0/3.0)
+|   |   |   |   |   |   |   |   |   CALC = Sometimes: Overweight_Level_II (10.0/1.0)
+|   |   |   |   |   |   |   |   |   CALC = Frequently: Overweight_Level_I (1.0)
+|   |   |   |   |   |   |   |   |   CALC = Always: Overweight_Level_II (0.0)
+|   |   |   |   |   |   |   |   TUE > 0.978574
+|   |   |   |   |   |   |   |   |   FAVC = no: Normal_Weight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   FAVC = yes: Insufficient_Weight (19.0/3.0)
+|   |   |   |   |   |   Age > 18.038422
+|   |   |   |   |   |   |   FAVC = no
+|   |   |   |   |   |   |   |   MTRANS = Public_Transportation
+|   |   |   |   |   |   |   |   |   Age <= 19.850524: Overweight_Level_II (7.0)
+|   |   |   |   |   |   |   |   |   Age > 19.850524: Normal_Weight (5.0/1.0)
+|   |   |   |   |   |   |   |   MTRANS = Walking: Overweight_Level_II (3.0/1.0)
+|   |   |   |   |   |   |   |   MTRANS = Automobile: Overweight_Level_II (1.0)
+|   |   |   |   |   |   |   |   MTRANS = Motorbike: Obesity_Type_I (1.0)
+|   |   |   |   |   |   |   |   MTRANS = Bike: Normal_Weight (1.0)
+|   |   |   |   |   |   |   FAVC = yes
+|   |   |   |   |   |   |   |   CALC = no
+|   |   |   |   |   |   |   |   |   FCVC <= 2.164062
+|   |   |   |   |   |   |   |   |   |   FCVC <= 1.84199: Overweight_Level_I (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   FCVC > 1.84199
+|   |   |   |   |   |   |   |   |   |   |   CH2O <= 2.010596
+|   |   |   |   |   |   |   |   |   |   |   |   FAF <= 1.618512
+|   |   |   |   |   |   |   |   |   |   |   |   |   TUE <= 1.972926: Obesity_Type_I (17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   TUE > 1.972926: Overweight_Level_II (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   FAF > 1.618512: Overweight_Level_II (8.0)
+|   |   |   |   |   |   |   |   |   |   |   CH2O > 2.010596: Obesity_Type_I (26.0/1.0)
+|   |   |   |   |   |   |   |   |   FCVC > 2.164062
+|   |   |   |   |   |   |   |   |   |   NCP <= 1.835543: Obesity_Type_II (5.0)
+|   |   |   |   |   |   |   |   |   |   NCP > 1.835543: Overweight_Level_II (2.0)
+|   |   |   |   |   |   |   |   CALC = Sometimes
+|   |   |   |   |   |   |   |   |   FAF <= 1.082236
+|   |   |   |   |   |   |   |   |   |   FCVC <= 1.989905: Overweight_Level_II (10.0)
+|   |   |   |   |   |   |   |   |   |   FCVC > 1.989905
+|   |   |   |   |   |   |   |   |   |   |   NCP <= 2.989791
+|   |   |   |   |   |   |   |   |   |   |   |   TUE <= 1.140348
+|   |   |   |   |   |   |   |   |   |   |   |   |   MTRANS = Public_Transportation: Overweight_Level_II (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MTRANS = Walking: Overweight_Level_II (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MTRANS = Automobile: Overweight_Level_I (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MTRANS = Motorbike: Overweight_Level_II (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MTRANS = Bike: Overweight_Level_II (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TUE > 1.140348: Obesity_Type_I (5.0)
+|   |   |   |   |   |   |   |   |   |   |   NCP > 2.989791
+|   |   |   |   |   |   |   |   |   |   |   |   CH2O <= 2.007348
+|   |   |   |   |   |   |   |   |   |   |   |   |   TUE <= 0.273882
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FAF <= 0.350717: Obesity_Type_I (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FAF > 0.350717: Overweight_Level_I (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   TUE > 0.273882
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   TUE <= 1.206251
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TUE <= 0.897942: Overweight_Level_I (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TUE > 0.897942: Normal_Weight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   TUE > 1.206251: Overweight_Level_I (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CH2O > 2.007348
+|   |   |   |   |   |   |   |   |   |   |   |   |   Age <= 23.172982
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Age <= 20.172661: Overweight_Level_I (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Age > 20.172661
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TUE <= 1.946173: Obesity_Type_I (16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TUE > 1.946173: Overweight_Level_I (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Age > 23.172982: Overweight_Level_I (2.0/1.0)
+|   |   |   |   |   |   |   |   |   FAF > 1.082236
+|   |   |   |   |   |   |   |   |   |   CH2O <= 2.049079
+|   |   |   |   |   |   |   |   |   |   |   Age <= 22.329041
+|   |   |   |   |   |   |   |   |   |   |   |   NCP <= 2.842848: Overweight_Level_II (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NCP > 2.842848: Obesity_Type_I (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Age > 22.329041: Obesity_Type_II (15.0)
+|   |   |   |   |   |   |   |   |   |   CH2O > 2.049079
+|   |   |   |   |   |   |   |   |   |   |   NCP <= 2.894142: Overweight_Level_II (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   NCP > 2.894142
+|   |   |   |   |   |   |   |   |   |   |   |   Age <= 19.833682: Overweight_Level_II (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Age > 19.833682: Overweight_Level_I (6.0)
+|   |   |   |   |   |   |   |   CALC = Frequently: Normal_Weight (1.0)
+|   |   |   |   |   |   |   |   CALC = Always: Obesity_Type_I (0.0)
+|   |   |   |   |   Age > 23.807181
+|   |   |   |   |   |   FAF <= 2.000088
+|   |   |   |   |   |   |   CH2O <= 2.962371
+|   |   |   |   |   |   |   |   MTRANS = Public_Transportation
+|   |   |   |   |   |   |   |   |   FAF <= 0.057758: Overweight_Level_II (10.0/2.0)
+|   |   |   |   |   |   |   |   |   FAF > 0.057758
+|   |   |   |   |   |   |   |   |   |   CALC = no: Obesity_Type_II (36.0/1.0)
+|   |   |   |   |   |   |   |   |   |   CALC = Sometimes
+|   |   |   |   |   |   |   |   |   |   |   NCP <= 2.946063
+|   |   |   |   |   |   |   |   |   |   |   |   CH2O <= 2.00357: Overweight_Level_II (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CH2O > 2.00357: Obesity_Type_II (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   NCP > 2.946063
+|   |   |   |   |   |   |   |   |   |   |   |   FAF <= 0.523847: Overweight_Level_II (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   FAF > 0.523847: Obesity_Type_II (80.0/2.0)
+|   |   |   |   |   |   |   |   |   |   CALC = Frequently: Obesity_Type_II (0.0)
+|   |   |   |   |   |   |   |   |   |   CALC = Always: Obesity_Type_II (0.0)
+|   |   |   |   |   |   |   |   MTRANS = Walking: Overweight_Level_II (3.0/1.0)
+|   |   |   |   |   |   |   |   MTRANS = Automobile
+|   |   |   |   |   |   |   |   |   NCP <= 2.698883
+|   |   |   |   |   |   |   |   |   |   NCP <= 1.02075: Obesity_Type_II (2.0)
+|   |   |   |   |   |   |   |   |   |   NCP > 1.02075
+|   |   |   |   |   |   |   |   |   |   |   FAF <= 1.04268: Overweight_Level_II (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   FAF > 1.04268: Obesity_Type_I (12.0/2.0)
+|   |   |   |   |   |   |   |   |   NCP > 2.698883
+|   |   |   |   |   |   |   |   |   |   Age <= 43.726081
+|   |   |   |   |   |   |   |   |   |   |   FAF <= 1.117311
+|   |   |   |   |   |   |   |   |   |   |   |   Age <= 29.506287
+|   |   |   |   |   |   |   |   |   |   |   |   |   NCP <= 2.967089: Obesity_Type_I (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NCP > 2.967089
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CH2O <= 2.002495: Obesity_Type_I (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CH2O > 2.002495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TUE <= 0.320851: Obesity_Type_I (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   TUE > 0.320851: Obesity_Type_II (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Age > 29.506287: Obesity_Type_II (55.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   FAF > 1.117311
+|   |   |   |   |   |   |   |   |   |   |   |   CALC = no
+|   |   |   |   |   |   |   |   |   |   |   |   |   CH2O <= 2.160169: Obesity_Type_II (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CH2O > 2.160169: Overweight_Level_II (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CALC = Sometimes: Obesity_Type_I (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CALC = Frequently: Obesity_Type_I (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CALC = Always: Obesity_Type_I (0.0)
+|   |   |   |   |   |   |   |   |   |   Age > 43.726081: Overweight_Level_II (5.0)
+|   |   |   |   |   |   |   |   MTRANS = Motorbike: Obesity_Type_II (0.0)
+|   |   |   |   |   |   |   |   MTRANS = Bike: Obesity_Type_II (1.0)
+|   |   |   |   |   |   |   CH2O > 2.962371
+|   |   |   |   |   |   |   |   FAF <= 0.94224: Obesity_Type_I (5.0)
+|   |   |   |   |   |   |   |   FAF > 0.94224: Overweight_Level_II (7.0/1.0)
+|   |   |   |   |   |   FAF > 2.000088
+|   |   |   |   |   |   |   TUE <= 0.044954: Overweight_Level_II (4.0)
+|   |   |   |   |   |   |   TUE > 0.044954: Obesity_Type_I (17.0/3.0)
+|   |   |   CAEC = Frequently
+|   |   |   |   FCVC <= 2.120185
+|   |   |   |   |   TUE <= 1.493716
+|   |   |   |   |   |   Age <= 31.490699: Normal_Weight (27.0/9.0)
+|   |   |   |   |   |   Age > 31.490699: Overweight_Level_II (3.0/1.0)
+|   |   |   |   |   TUE > 1.493716
+|   |   |   |   |   |   NCP <= 1.989398: Normal_Weight (2.0)
+|   |   |   |   |   |   NCP > 1.989398
+|   |   |   |   |   |   |   Gender = Female
+|   |   |   |   |   |   |   |   FAF <= 0.305422: Overweight_Level_I (3.0)
+|   |   |   |   |   |   |   |   FAF > 0.305422: Insufficient_Weight (2.0)
+|   |   |   |   |   |   |   Gender = Male: Overweight_Level_I (2.0/1.0)
+|   |   |   |   FCVC > 2.120185: Insufficient_Weight (7.0)
+|   |   |   CAEC = Always
+|   |   |   |   FCVC <= 1.492834: Normal_Weight (4.0/1.0)
+|   |   |   |   FCVC > 1.492834
+|   |   |   |   |   FAF <= 1.493018
+|   |   |   |   |   |   Age <= 22.480889: Overweight_Level_I (3.0/1.0)
+|   |   |   |   |   |   Age > 22.480889: Obesity_Type_I (7.0/3.0)
+|   |   |   |   |   FAF > 1.493018: Normal_Weight (2.0/1.0)
+|   |   |   CAEC = no: Normal_Weight (5.0/2.0)
+|   |   NCP > 3.014808
+|   |   |   Age <= 29.981494
+|   |   |   |   CALC = no
+|   |   |   |   |   FAVC = no
+|   |   |   |   |   |   CAEC = Sometimes: Overweight_Level_II (5.0)
+|   |   |   |   |   |   CAEC = Frequently: Normal_Weight (2.0/1.0)
+|   |   |   |   |   |   CAEC = Always: Overweight_Level_II (0.0)
+|   |   |   |   |   |   CAEC = no: Overweight_Level_II (0.0)
+|   |   |   |   |   FAVC = yes
+|   |   |   |   |   |   FCVC <= 1.993101: Overweight_Level_I (2.0)
+|   |   |   |   |   |   FCVC > 1.993101: Insufficient_Weight (42.0/2.0)
+|   |   |   |   CALC = Sometimes
+|   |   |   |   |   MTRANS = Public_Transportation
+|   |   |   |   |   |   Age <= 18.771001: Insufficient_Weight (3.0/1.0)
+|   |   |   |   |   |   Age > 18.771001: Overweight_Level_I (37.0/2.0)
+|   |   |   |   |   MTRANS = Walking: Overweight_Level_I (0.0)
+|   |   |   |   |   MTRANS = Automobile: Normal_Weight (2.0/1.0)
+|   |   |   |   |   MTRANS = Motorbike: Overweight_Level_I (0.0)
+|   |   |   |   |   MTRANS = Bike: Overweight_Level_I (0.0)
+|   |   |   |   CALC = Frequently: Insufficient_Weight (0.0)
+|   |   |   |   CALC = Always: Insufficient_Weight (0.0)
+|   |   |   Age > 29.981494
+|   |   |   |   NCP <= 3.16645: Overweight_Level_II (3.0)
+|   |   |   |   NCP > 3.16645: Obesity_Type_II (9.0)
+|   family_history_with_overweight = no
+|   |   FCVC <= 2.004146
+|   |   |   FCVC <= 1.979944
+|   |   |   |   CALC = no
+|   |   |   |   |   Age <= 23.035829: Normal_Weight (3.0)
+|   |   |   |   |   Age > 23.035829: Overweight_Level_I (3.0)
+|   |   |   |   CALC = Sometimes
+|   |   |   |   |   SCC = no
+|   |   |   |   |   |   TUE <= 1.983678: Insufficient_Weight (22.0/2.0)
+|   |   |   |   |   |   TUE > 1.983678: Normal_Weight (2.0)
+|   |   |   |   |   SCC = yes: Overweight_Level_I (4.0)
+|   |   |   |   CALC = Frequently: Insufficient_Weight (0.0)
+|   |   |   |   CALC = Always: Insufficient_Weight (0.0)
+|   |   |   FCVC > 1.979944
+|   |   |   |   CAEC = Sometimes
+|   |   |   |   |   Age <= 21.473078
+|   |   |   |   |   |   SCC = no
+|   |   |   |   |   |   |   CALC = no: Normal_Weight (13.0/3.0)
+|   |   |   |   |   |   |   CALC = Sometimes
+|   |   |   |   |   |   |   |   Age <= 18.656912
+|   |   |   |   |   |   |   |   |   FAF <= 0.995735: Insufficient_Weight (5.0)
+|   |   |   |   |   |   |   |   |   FAF > 0.995735: Normal_Weight (4.0/1.0)
+|   |   |   |   |   |   |   |   Age > 18.656912: Normal_Weight (13.0)
+|   |   |   |   |   |   |   CALC = Frequently: Normal_Weight (1.0)
+|   |   |   |   |   |   |   CALC = Always: Normal_Weight (0.0)
+|   |   |   |   |   |   SCC = yes: Overweight_Level_I (3.0/2.0)
+|   |   |   |   |   Age > 21.473078
+|   |   |   |   |   |   CH2O <= 1.728139
+|   |   |   |   |   |   |   Age <= 26.490926: Normal_Weight (5.0)
+|   |   |   |   |   |   |   Age > 26.490926: Overweight_Level_I (3.0)
+|   |   |   |   |   |   CH2O > 1.728139
+|   |   |   |   |   |   |   FAF <= 0.486006
+|   |   |   |   |   |   |   |   FAVC = no: Overweight_Level_II (2.0)
+|   |   |   |   |   |   |   |   FAVC = yes: Obesity_Type_I (2.0)
+|   |   |   |   |   |   |   FAF > 0.486006
+|   |   |   |   |   |   |   |   Age <= 37.492444: Normal_Weight (12.0/3.0)
+|   |   |   |   |   |   |   |   Age > 37.492444: Overweight_Level_II (3.0/1.0)
+|   |   |   |   CAEC = Frequently: Normal_Weight (24.0/6.0)
+|   |   |   |   CAEC = Always: Normal_Weight (6.0)
+|   |   |   |   CAEC = no: Overweight_Level_I (8.0)
+|   |   FCVC > 2.004146
+|   |   |   SCC = no
+|   |   |   |   CAEC = Sometimes
+|   |   |   |   |   Age <= 20.744839: Insufficient_Weight (22.0)
+|   |   |   |   |   Age > 20.744839: Overweight_Level_I (9.0)
+|   |   |   |   CAEC = Frequently: Insufficient_Weight (19.0)
+|   |   |   |   CAEC = Always: Insufficient_Weight (0.0)
+|   |   |   |   CAEC = no: Overweight_Level_I (1.0)
+|   |   |   SCC = yes
+|   |   |   |   FAF <= 1.003294: Overweight_Level_I (6.0)
+|   |   |   |   FAF > 1.003294: Insufficient_Weight (4.0)
+FCVC > 2.997951
+|   family_history_with_overweight = yes
+|   |   Gender = Female
+|   |   |   CAEC = Sometimes
+|   |   |   |   NCP <= 2.986637
+|   |   |   |   |   CALC = no
+|   |   |   |   |   |   NCP <= 1.391778
+|   |   |   |   |   |   |   Age <= 20.492077: Normal_Weight (2.0/1.0)
+|   |   |   |   |   |   |   Age > 20.492077: Obesity_Type_I (3.0)
+|   |   |   |   |   |   NCP > 1.391778: Overweight_Level_II (2.0)
+|   |   |   |   |   CALC = Sometimes
+|   |   |   |   |   |   CH2O <= 2.495961: Overweight_Level_I (11.0/2.0)
+|   |   |   |   |   |   CH2O > 2.495961: Normal_Weight (2.0)
+|   |   |   |   |   CALC = Frequently: Overweight_Level_I (0.0)
+|   |   |   |   |   CALC = Always: Overweight_Level_I (0.0)
+|   |   |   |   NCP > 2.986637
+|   |   |   |   |   MTRANS = Public_Transportation
+|   |   |   |   |   |   FAVC = no
+|   |   |   |   |   |   |   TUE <= 0.492528: Normal_Weight (4.0/1.0)
+|   |   |   |   |   |   |   TUE > 0.492528: Overweight_Level_II (7.0)
+|   |   |   |   |   |   FAVC = yes: Obesity_Type_III (248.0/2.0)
+|   |   |   |   |   MTRANS = Walking: Normal_Weight (3.0/1.0)
+|   |   |   |   |   MTRANS = Automobile
+|   |   |   |   |   |   FAVC = no
+|   |   |   |   |   |   |   Age <= 36.023972: Obesity_Type_I (2.0/1.0)
+|   |   |   |   |   |   |   Age > 36.023972: Normal_Weight (2.0/1.0)
+|   |   |   |   |   |   FAVC = yes
+|   |   |   |   |   |   |   CALC = no: Overweight_Level_II (4.0)
+|   |   |   |   |   |   |   CALC = Sometimes: Normal_Weight (3.0)
+|   |   |   |   |   |   |   CALC = Frequently: Overweight_Level_II (4.0)
+|   |   |   |   |   |   |   CALC = Always: Overweight_Level_II (0.0)
+|   |   |   |   |   MTRANS = Motorbike: Obesity_Type_III (0.0)
+|   |   |   |   |   MTRANS = Bike: Obesity_Type_III (0.0)
+|   |   |   CAEC = Frequently
+|   |   |   |   MTRANS = Public_Transportation
+|   |   |   |   |   Age <= 20.102241: Normal_Weight (6.0)
+|   |   |   |   |   Age > 20.102241
+|   |   |   |   |   |   CH2O <= 2.90545: Insufficient_Weight (7.0)
+|   |   |   |   |   |   CH2O > 2.90545: Normal_Weight (2.0/1.0)
+|   |   |   |   MTRANS = Walking: Normal_Weight (2.0/1.0)
+|   |   |   |   MTRANS = Automobile: Normal_Weight (2.0)
+|   |   |   |   MTRANS = Motorbike: Normal_Weight (0.0)
+|   |   |   |   MTRANS = Bike: Normal_Weight (0.0)
+|   |   |   CAEC = Always: Normal_Weight (6.0)
+|   |   |   CAEC = no: Normal_Weight (3.0/1.0)
+|   |   Gender = Male
+|   |   |   Age <= 23.035829
+|   |   |   |   CALC = no
+|   |   |   |   |   NCP <= 3.071028
+|   |   |   |   |   |   TUE <= 0.492528: Normal_Weight (3.0)
+|   |   |   |   |   |   TUE > 0.492528
+|   |   |   |   |   |   |   Age <= 18.078256: Normal_Weight (2.0)
+|   |   |   |   |   |   |   Age > 18.078256: Insufficient_Weight (2.0)
+|   |   |   |   |   NCP > 3.071028: Insufficient_Weight (6.0)
+|   |   |   |   CALC = Sometimes
+|   |   |   |   |   FAF <= 0.6081
+|   |   |   |   |   |   FAF <= 0.072117: Normal_Weight (7.0/2.0)
+|   |   |   |   |   |   FAF > 0.072117: Obesity_Type_II (3.0)
+|   |   |   |   |   FAF > 0.6081
+|   |   |   |   |   |   CAEC = Sometimes
+|   |   |   |   |   |   |   MTRANS = Public_Transportation
+|   |   |   |   |   |   |   |   SCC = no
+|   |   |   |   |   |   |   |   |   Age <= 18.850466: Normal_Weight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   Age > 18.850466: Overweight_Level_I (7.0/2.0)
+|   |   |   |   |   |   |   |   SCC = yes: Normal_Weight (2.0)
+|   |   |   |   |   |   |   MTRANS = Walking: Overweight_Level_I (4.0/1.0)
+|   |   |   |   |   |   |   MTRANS = Automobile
+|   |   |   |   |   |   |   |   FAF <= 2.274248: Insufficient_Weight (5.0)
+|   |   |   |   |   |   |   |   FAF > 2.274248: Overweight_Level_I (2.0)
+|   |   |   |   |   |   |   MTRANS = Motorbike: Overweight_Level_I (0.0)
+|   |   |   |   |   |   |   MTRANS = Bike: Overweight_Level_I (0.0)
+|   |   |   |   |   |   CAEC = Frequently: Normal_Weight (5.0/2.0)
+|   |   |   |   |   |   CAEC = Always: Normal_Weight (3.0/2.0)
+|   |   |   |   |   |   CAEC = no: Overweight_Level_I (0.0)
+|   |   |   |   CALC = Frequently: Overweight_Level_II (1.0)
+|   |   |   |   CALC = Always: Normal_Weight (0.0)
+|   |   |   Age > 23.035829
+|   |   |   |   SCC = no
+|   |   |   |   |   FAF <= 1.70464: Obesity_Type_II (12.0/1.0)
+|   |   |   |   |   FAF > 1.70464
+|   |   |   |   |   |   FAVC = no: Normal_Weight (2.0/1.0)
+|   |   |   |   |   |   FAVC = yes: Obesity_Type_I (13.0/1.0)
+|   |   |   |   SCC = yes: Overweight_Level_I (2.0)
+|   family_history_with_overweight = no
+|   |   Gender = Female
+|   |   |   CAEC = Sometimes
+|   |   |   |   Age <= 25.498965
+|   |   |   |   |   SCC = no
+|   |   |   |   |   |   NCP <= 3.281391
+|   |   |   |   |   |   |   NCP <= 2.491315
+|   |   |   |   |   |   |   |   Age <= 19.524698: Insufficient_Weight (3.0)
+|   |   |   |   |   |   |   |   Age > 19.524698: Normal_Weight (4.0)
+|   |   |   |   |   |   |   NCP > 2.491315: Normal_Weight (10.0/1.0)
+|   |   |   |   |   |   NCP > 3.281391: Insufficient_Weight (2.0)
+|   |   |   |   |   SCC = yes
+|   |   |   |   |   |   CH2O <= 2.067741: Overweight_Level_I (3.0/1.0)
+|   |   |   |   |   |   CH2O > 2.067741: Insufficient_Weight (5.0/1.0)
+|   |   |   |   Age > 25.498965: Overweight_Level_I (4.0/1.0)
+|   |   |   CAEC = Frequently
+|   |   |   |   TUE <= 0.953841: Insufficient_Weight (28.0/1.0)
+|   |   |   |   TUE > 0.953841
+|   |   |   |   |   FAF <= 1.493018: Overweight_Level_II (2.0/1.0)
+|   |   |   |   |   FAF > 1.493018: Normal_Weight (2.0)
+|   |   |   CAEC = Always: Normal_Weight (6.0/1.0)
+|   |   |   CAEC = no: Normal_Weight (2.0/1.0)
+|   |   Gender = Male
+|   |   |   Age <= 26: Normal_Weight (24.0/10.0)
+|   |   |   Age > 26
+|   |   |   |   FAF <= 1.493018: Overweight_Level_II (3.0)
+|   |   |   |   FAF > 1.493018: Overweight_Level_I (4.0)
+
+Number of Leaves  : 	225
+
+Size of the tree : 	392
+
+
+Time taken to build model: 0.1 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         327               78.4173 %
+Incorrectly Classified Instances        90               21.5827 %
+Kappa statistic                          0.7475
+Mean absolute error                      0.071 
+Root mean squared error                  0.2328
+Relative absolute error                 29.0036 %
+Root relative squared error             66.5426 %
+Total Number of Instances              417     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.607    0.058    0.618      0.607    0.613      0.553    0.795     0.449     Normal_Weight
+                 0.717    0.058    0.644      0.717    0.679      0.630    0.858     0.627     Overweight_Level_I
+                 0.656    0.028    0.800      0.656    0.721      0.683    0.842     0.655     Overweight_Level_II
+                 0.754    0.051    0.719      0.754    0.736      0.690    0.910     0.707     Obesity_Type_I
+                 0.889    0.014    0.906      0.889    0.897      0.882    0.932     0.804     Insufficient_Weight
+                 0.804    0.030    0.804      0.804    0.804      0.773    0.913     0.668     Obesity_Type_II
+                 1.000    0.012    0.950      1.000    0.974      0.969    0.996     0.962     Obesity_Type_III
+Weighted Avg.    0.784    0.035    0.785      0.784    0.783      0.750    0.897     0.708     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 34  7  4  4  3  2  2 |  a = Normal_Weight
+  8 38  1  3  2  1  0 |  b = Overweight_Level_I
+  5  2 40  8  0  6  0 |  c = Overweight_Level_II
+  2  8  2 46  0  1  2 |  d = Obesity_Type_I
+  4  1  0  0 48  1  0 |  e = Insufficient_Weight
+  2  3  3  3  0 45  0 |  f = Obesity_Type_II
+  0  0  0  0  0  0 76 |  g = Obesity_Type_III
+

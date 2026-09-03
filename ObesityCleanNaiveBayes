@@ -1,0 +1,170 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     ObesityDataSet_raw_and_data_sinthetic-weka.filters.unsupervised.instance.RemoveDuplicates-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.RemovePercentage-P20.0
+Instances:    1670
+Attributes:   17
+              Gender
+              Age
+              Height
+              Weight
+              family_history_with_overweight
+              FAVC
+              FCVC
+              NCP
+              CAEC
+              SMOKE
+              CH2O
+              SCC
+              FAF
+              TUE
+              CALC
+              MTRANS
+              NObeyesdad
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                               Class
+Attribute                              Normal_Weight  Overweight_Level_I Overweight_Level_II      Obesity_Type_I Insufficient_Weight     Obesity_Type_II    Obesity_Type_III
+                                              (0.14)              (0.13)              (0.14)              (0.17)              (0.13)              (0.14)              (0.15)
+=============================================================================================================================================================================
+Gender
+  Female                                        116.0               120.0                83.0               130.0               133.0                 2.0               248.0
+  Male                                          112.0               105.0               148.0               162.0                82.0               241.0                 2.0
+  [total]                                       228.0               225.0               231.0               292.0               215.0               243.0               250.0
+
+Age
+  mean                                        21.6961             23.4374             26.7195             26.2241             19.6919             28.5273             23.3811
+  std. dev.                                    5.3067              6.1518              8.0368              7.8636              2.5315              4.9704              2.7669
+  weight sum                                      226                 223                 229                 290                 213                 241                 248
+  precision                                    0.0415              0.0415              0.0415              0.0415              0.0415              0.0415              0.0415
+
+Height
+  mean                                         1.6762              1.6926              1.7005              1.6928              1.6937              1.7713              1.6911
+  std. dev.                                    0.0964              0.0978               0.088              0.0955              0.0985              0.0736              0.0655
+  weight sum                                      226                 223                 229                 290                 213                 241                 248
+  precision                                    0.0004              0.0004              0.0004              0.0004              0.0004              0.0004              0.0004
+
+Weight
+  mean                                        61.9264              74.648             81.7297             92.7379             50.0535            115.3138            121.6328
+  std. dev.                                     9.417              8.7076              8.2117              11.189              5.9166              8.1547             15.8311
+  weight sum                                      226                 223                 229                 290                 213                 241                 248
+  precision                                    0.1106              0.1106              0.1106              0.1106              0.1106              0.1106              0.1106
+
+family_history_with_overweight
+  yes                                           119.0               171.0               212.0               284.0               100.0               241.0               249.0
+  no                                            109.0                54.0                19.0                 8.0               115.0                 2.0                 1.0
+  [total]                                       228.0               225.0               231.0               292.0               215.0               243.0               250.0
+
+FAVC
+  no                                             65.0                19.0                62.0                10.0                43.0                 5.0                 2.0
+  yes                                           163.0               206.0               169.0               282.0               172.0               238.0               248.0
+  [total]                                       228.0               225.0               231.0               292.0               215.0               243.0               250.0
+
+FCVC
+  mean                                         2.3358              2.2971              2.2718              2.1849              2.4923              2.3879              2.9985
+  std. dev.                                    0.5883              0.4949              0.4495              0.4372              0.5739              0.4763              0.0005
+  weight sum                                      226                 223                 229                 290                 213                 241                 248
+  precision                                     0.003               0.003               0.003               0.003               0.003               0.003               0.003
+
+NCP
+  mean                                          2.792              2.5996              2.4966              2.4283              2.9391              2.7581                   3
+  std. dev.                                    0.8234              0.9205              0.7458              0.7899              0.8528               0.578               0.001
+  weight sum                                      226                 223                 229                 290                 213                 241                 248
+  precision                                    0.0058              0.0058              0.0058              0.0058              0.0058              0.0058              0.0058
+
+CAEC
+  Sometimes                                     123.0               189.0               214.0               279.0               116.0               239.0               248.0
+  Frequently                                     70.0                14.0                13.0                 7.0                94.0                 2.0                 2.0
+  Always                                         28.0                 5.0                 4.0                 6.0                 3.0                 3.0                 1.0
+  no                                              9.0                19.0                 2.0                 2.0                 4.0                 1.0                 1.0
+  [total]                                       230.0               227.0               233.0               294.0               217.0               245.0               252.0
+
+SMOKE
+  no                                            215.0               222.0               227.0               287.0               213.0               230.0               248.0
+  yes                                            13.0                 3.0                 4.0                 5.0                 2.0                13.0                 2.0
+  [total]                                       228.0               225.0               231.0               292.0               215.0               243.0               250.0
+
+CH2O
+  mean                                         1.8544              2.0281              2.0627               2.129              1.9221              1.8597              2.2178
+  std. dev.                                    0.6385              0.6044              0.5438              0.6139              0.5881              0.5539              0.5966
+  weight sum                                      226                 223                 229                 290                 213                 241                 248
+  precision                                     0.002               0.002               0.002               0.002               0.002               0.002               0.002
+
+SCC
+  no                                            201.0               193.0               226.0               290.0               195.0               242.0               249.0
+  yes                                            27.0                32.0                 5.0                 2.0                20.0                 1.0                 1.0
+  [total]                                       228.0               225.0               231.0               292.0               215.0               243.0               250.0
+
+FAF
+  mean                                         1.2744              1.0586              0.9734              1.0204              1.2779               0.977               0.699
+  std. dev.                                    1.0409              0.8712              0.8473              0.9167              0.8472              0.5903              0.7381
+  weight sum                                      226                 223                 229                 290                 213                 241                 248
+  precision                                    0.0031              0.0031              0.0031              0.0031              0.0031              0.0031              0.0031
+
+TUE
+  mean                                         0.6996              0.6578              0.6813              0.6571              0.8276              0.5208              0.6111
+  std. dev.                                      0.69               0.691              0.5808              0.6876              0.6233              0.5568               0.278
+  weight sum                                      226                 223                 229                 290                 213                 241                 248
+  precision                                    0.0022              0.0022              0.0022              0.0022              0.0022              0.0022              0.0022
+
+CALC
+  no                                             84.0                40.0               101.0               138.0                97.0                62.0                 2.0
+  Sometimes                                     126.0               170.0               114.0               141.0               117.0               180.0               248.0
+  Frequently                                     18.0                16.0                17.0                14.0                 2.0                 2.0                 1.0
+  Always                                          2.0                 1.0                 1.0                 1.0                 1.0                 1.0                 1.0
+  [total]                                       230.0               227.0               233.0               294.0               217.0               245.0               252.0
+
+MTRANS
+  Public_Transportation                         160.0               163.0               152.0               189.0               172.0               163.0               248.0
+  Walking                                        25.0                 9.0                 6.0                 3.0                 6.0                 1.0                 1.0
+  Automobile                                     37.0                53.0                73.0                98.0                38.0                79.0                 2.0
+  Motorbike                                       6.0                 2.0                 2.0                 4.0                 1.0                 1.0                 1.0
+  Bike                                            3.0                 1.0                 1.0                 1.0                 1.0                 2.0                 1.0
+  [total]                                       231.0               228.0               234.0               295.0               218.0               246.0               253.0
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         288               69.0647 %
+Incorrectly Classified Instances       129               30.9353 %
+Kappa statistic                          0.6377
+Mean absolute error                      0.1064
+Root mean squared error                  0.2507
+Relative absolute error                 43.4737 %
+Root relative squared error             71.6466 %
+Total Number of Instances              417     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.482    0.047    0.614      0.482    0.540      0.483    0.922     0.608     Normal_Weight
+                 0.547    0.055    0.592      0.547    0.569      0.509    0.923     0.623     Overweight_Level_I
+                 0.492    0.067    0.556      0.492    0.522      0.447    0.889     0.538     Overweight_Level_II
+                 0.475    0.084    0.492      0.475    0.483      0.397    0.860     0.476     Obesity_Type_I
+                 0.907    0.036    0.790      0.907    0.845      0.823    0.983     0.914     Insufficient_Weight
+                 0.857    0.036    0.787      0.857    0.821      0.792    0.978     0.909     Obesity_Type_II
+                 1.000    0.035    0.864      1.000    0.927      0.913    1.000     1.000     Obesity_Type_III
+Weighted Avg.    0.691    0.051    0.676      0.691    0.680      0.632    0.938     0.732     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 27  9  4  0 12  0  4 |  a = Normal_Weight
+  7 29 12  4  1  0  0 |  b = Overweight_Level_I
+  8  0 30 20  0  1  2 |  c = Overweight_Level_II
+  0  8  8 29  0 12  4 |  d = Obesity_Type_I
+  2  3  0  0 49  0  0 |  e = Insufficient_Weight
+  0  0  0  6  0 48  2 |  f = Obesity_Type_II
+  0  0  0  0  0  0 76 |  g = Obesity_Type_III
+
